@@ -21,7 +21,7 @@ void Deck::fillDeck(){
 }
 
 Card Deck::draw(){
-    if (cards.size() < 1 ) {
+    if (cards.empty() ) {
         throw std::range_error("The deck is empty");
     }
     Card card = cards.back();
