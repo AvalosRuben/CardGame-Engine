@@ -15,6 +15,8 @@ namespace blackjack{
         bool is_soft; 
         //Constructor initializing everything
         HandResult() : value(0), is_blackjack(false), is_bust(false), is_soft(false) {}
+        HandResult(int v, bool bj, bool bust, bool soft)
+        : value(v), is_blackjack(bj), is_bust(bust), is_soft(soft) {}
     };
 
     
