@@ -16,6 +16,7 @@ class Deck{
         fillDeck();
     }
     void shuffle();
+    void shuffle(unsigned int seed);
     Card draw();
     size_t size() const {return cards.size();}
     bool empty() const {return cards.empty();}
